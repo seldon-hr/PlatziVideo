@@ -14,7 +14,7 @@
         }
         
         body{
-            background-color: #AB88FF;
+            background-color: #8F57FD;
         }
 
         .header {
@@ -78,6 +78,30 @@
             color: #fff
         }
 
+        .main{
+            height: 300px;
+        }
+    
+        .main__title {
+            color: #fff;
+            font-size: 25px;
+        }
+
+        .input {
+            border: 2px solid #fff;
+            border-radius: 25px;
+            color: #fff;
+            font-family: 'Mali', sans-serif;
+            font-size: 16px;
+            height: 50px;
+            padding: 0px 20px;
+            width: 70%;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        ::placeholder {
+            color: #fff
+        }
 
 
     </style>
@@ -99,5 +123,10 @@
             </ul>
         </div>
     </header>
+
+    <section class="main">
+        <h2 class="main__title">¿Qué quieres ver hoy?</h2>
+        <input class="input" type="text" placeholder="Buscar...">
+    </section>
 </body>
 </html>
