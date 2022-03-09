@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrousel</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .carousel {
+            width: 100%;
+            overflow: scroll;
+            padding: 30px;
+            position: relative;
+        }
+
+        .carousel__conteiner {
+            white-space: nowrap; /*Envolve each object; each object is must next not down*/
+            margin: 70px 0px;
+            padding-bottom: 10px;
+        }
+
+        .carousel__item {
+            background-color: blanchedalmond;
+            width: 200px;
+            height: 250px;
+            border-radius: 20px;
+            overflow: hidden;
+            margin-right: 10px;
+            display: inline-block;
+            cursor: pointer;
+            transition: 450ms;
+            transform-origin: center left;
+        }
+
+        .carousel__item:hover ~ .carousel__item{
+            transform: translate3d(100px, 0, 0);
+        }
+
+        .carousel__conteiner:hover .carousel__item {
+            /* Make tht when you hover in a item the other going to apply this opacity */
+            opacity: 0.3;
+        }
+
+        .carousel__conteiner:hover .carousel__item:hover {
+            /* With hover in an item, it is going to be bigger,scale by 1.5 */
+            transform: scale(1.5);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <section class="carousel">
+        <div class="carousel__conteiner">
+            <div class="carousel__item"></div>
+            <div class="carousel__item"></div>
+        </div>
+    </section>
+</body>
+</html>
