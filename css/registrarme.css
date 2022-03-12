@@ -49,51 +49,21 @@ header img{
     flex-direction: column;
 }
 
-.login__container--label {
+
+
+.login__container--login {
     font-size: 14px;
+    align-self: center;
 }
 
-.login__container--remember-me {
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-
-.login__container--remember-me a {
-    color: #fff;
-    font-size: 14px;
-    text-decoration: none;
-}
-
-.login__container--remember-me a:hover {
-    text-decoration: underline;
-}
-
-.login__container--social-media > div {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-
-.login__container--social-media > div > img {
-    width: 30px;
-    margin-right: 10px;
-}
-
-.login__container--register {
-    font-size: 14px;
-}
-
-.login__container--register a {
+.login__container--login a {
     font-size: 16px;
     color: #fff;
     font-weight: bold;
     text-decoration: none;
 }
 
-.login__container--register a:hover {
+.login__container--login a:hover {
     text-decoration: underline;
 }
 
@@ -150,4 +120,18 @@ header img{
 
 .footer a:hover {
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    .login__container {
+        background-color: transparent;
+        border: none;
+        padding: 0px;
+        /* width: 100%; */
+    }
+
+    .footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
 }
