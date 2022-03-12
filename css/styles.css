@@ -6,7 +6,9 @@
 }
 
 body{
-    background-color: #8F57FD;
+    background-color: #15151b; /* fallback for old browsers */
+    
+
 }
 
 .header {
@@ -193,3 +195,27 @@ body{
             font-size: 8px;
             margin: 3px 0px;
         }
+
+
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #ccc;
+            border-radius: 4px;
+          }
+          ::-webkit-scrollbar {
+            width: 8px; 
+            height: 8px;   
+            background:rgba(255,255,255,.4);
+            border-radius: 4px;
+          }
+          ::-webkit-scrollbar:hover {
+            background: #b3b3b3;
+            box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+          }
+          ::-webkit-scrollbar:hover:active {
+            background: #999;
+          }
