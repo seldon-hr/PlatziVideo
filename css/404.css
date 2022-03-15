@@ -82,7 +82,7 @@ body{
 .animated {
     animation-duration: 2.5s;
     animation-fill-mode: both;
-    animation-iteration-count: infinite;
+    animation-iteration-count: finite;
   }
 
 @keyframes hinge {
