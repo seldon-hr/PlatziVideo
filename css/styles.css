@@ -1,221 +1,272 @@
-*{
-    margin: 0px;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Mulish', sans-serif;
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Mulish', sans-serif;
 }
 
-body{
-    background-color: #15151b; /* fallback for old browsers */
-    
-
+body {
+  background-color: #15151b;
+  /* fallback for old browsers */
 }
 
 .header {
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__img {
-    width: 200px;
-    margin: 10px 0 0 10px
+  width: 200px;
+  margin: 10px 0 0 10px;
 }
 
 .haeder__menu {
-    margin-right: 30px;
+  margin-right: 30px;
 }
 
 .header__menu ul {
-    display: none;
-    list-style: none;
-    position: absolute;
-    padding: 0px;
-    width: 100px;
-    text-align: right;
-    margin: 0px 0px 0px -14px
+  display: none;
+  list-style: none;
+  position: absolute;
+  padding: 0px;
+  width: 100px;
+  text-align: right;
+  margin: 0px 0px 0px -14px;
 }
 
-.header__menu:hover ul, ul:hover { /*Este selector dice que cuando se haga hover a 'header__menu' tomo efecto en 'ul' y que cuando haga hover en 'ul' también suceda esto*/
-    display: block;
+.header__menu:hover ul, ul:hover {
+  /*Este selector dice que cuando se haga hover a 'header__menu' tomo efecto en 'ul' y que cuando haga hover en 'ul' también suceda esto*/
+  display: block;
 }
 
-.header__menu li{
-    margin: 10px 0px;
+.header__menu li {
+  margin: 10px 0px;
 }
 
-.header__menu li a{
-    color: #fff;
-    text-decoration: none;
+.header__menu li a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .header__menu li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .header__menu--profile {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    margin-right: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  margin-right: 8px;
 }
 
 .header__menu--profile img {
-    margin-right: 8px;
-    width: 40px;
+  margin-right: 8px;
+  width: 40px;
 }
 
 .header__menu--profile p {
-    margin: 0px;
-    color: #fff
+  margin: 0px;
+  color: #fff;
 }
 
-.main{
-    height: 200px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly;
+.main {
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .main__title {
-    color: #fff;
-    font-size: 25px;
+  color: #fff;
+  font-size: 25px;
 }
 
 .input {
-    border: 2px solid #fff;
-    border-radius: 25px;
-    color: #fff;
-    font-family: 'Mali', sans-serif;
-    font-size: 16px;
-    height: 50px;
-    padding: 0px 20px;
-    width: 70%;
-    background-color: rgba(255, 255, 255, 0.1);
-    outline: none;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  color: #fff;
+  font-family: 'Mali', sans-serif;
+  font-size: 16px;
+  height: 50px;
+  padding: 0px 20px;
+  width: 70%;
+  background-color: rgba(255, 255, 255, 0.1);
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  color: #fff;
+}
+
+:-ms-input-placeholder {
+  color: #fff;
+}
+
+::-ms-input-placeholder {
+  color: #fff;
 }
 
 ::placeholder {
-    color: #fff
+  color: #fff;
 }
-
 
 .categories__titles {
-    color: #fff;
-    font-size: 16px;
-    position: absolute;
-    padding-left: 30px;
-    width: 100%;
+  color: #fff;
+  font-size: 16px;
+  position: absolute;
+  padding-left: 30px;
+  width: 100%;
 }
 
-
 .carousel {
-            width: 100%;
-            overflow: scroll;
-            padding: 30px;
-            position: relative;
-        }
+  width: 100%;
+  overflow: scroll;
+  padding: 30px;
+  position: relative;
+}
 
-        .carousel__conteiner {
-            white-space: nowrap; /*Envolve each object; each object is must next not down*/
-            margin: 70px 0px;
-            padding-bottom: 10px;
-        }
+.carousel__conteiner {
+  white-space: nowrap;
+  /*Envolve each object; each object is must next not down*/
+  margin: 70px 0px;
+  padding-bottom: 10px;
+}
 
-        .carousel-item {
-            background-color: blanchedalmond;
-            width: 200px;
-            height: 250px;
-            border-radius: 20px;
-            overflow: hidden;
-            margin-right: 10px;
-            display: inline-block;
-            cursor: pointer;
-            transition: 450ms;
-            transform-origin: center left;
-            position: relative;
-        }
+.carousel-item {
+  background-color: blanchedalmond;
+  width: 200px;
+  height: 250px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-right: 10px;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition: 450ms;
+  transition: 450ms;
+  -webkit-transform-origin: center left;
+          transform-origin: center left;
+  position: relative;
+}
 
-        .carousel-item:hover ~ .carousel-item{
-            transform: translate3d(100px, 0, 0);
-        }
+.carousel-item:hover ~ .carousel-item {
+  -webkit-transform: translate3d(100px, 0, 0);
+          transform: translate3d(100px, 0, 0);
+}
 
-        .carousel__conteiner:hover .carousel-item {
-            /* Make tht when you hover in a item the other going to apply this opacity */
-            opacity: 0.3;
-        }
+.carousel__conteiner:hover .carousel-item {
+  /* Make tht when you hover in a item the other going to apply this opacity */
+  opacity: 0.3;
+}
 
-        .carousel__conteiner:hover .carousel-item:hover {
-            /* With hover in an item, it is going to be bigger,scale by 1.5 */
-            transform: scale(1.5);
-            opacity: 1;
-        }
+.carousel__conteiner:hover .carousel-item:hover {
+  /* With hover in an item, it is going to be bigger,scale by 1.5 */
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  opacity: 1;
+}
 
-        .carouse-item__img {
-            width: 200px;
-            height: 250px;
-            object-fit: cover;
-        }
+.carouse-item__img {
+  width: 200px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
-        .carousel-item__details {
-            background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%,);
-            font-size: 10px;
-            opacity: 0;
-            transition: 450ms opacity;
-            padding: 10px;
-            position: absolute;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: flex-start;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-        }
+.carousel-item__details {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+  font-size: 10px;
+  opacity: 0;
+  -webkit-transition: 450ms opacity;
+  transition: 450ms opacity;
+  padding: 10px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 
-        .carousel-item__details--img {
-            width: 30px;
-        }
+.carousel-item__details--img {
+  width: 30px;
+}
 
-        .carousel-item:hover .carousel-item__details {
-            opacity: 1;
-          }
+.carousel-item:hover .carousel-item__details {
+  opacity: 1;
+}
 
-        .carousel-item__details--title {
-            color: #fff;
-            margin: 5px 0px 0px 0px;
-          }
-          
-        .carousel-item__details--subtitle {
-            color: #fff;
-            font-size: 8px;
-            margin: 3px 0px;
-        }
+.carousel-item__details--title {
+  color: #fff;
+  margin: 5px 0px 0px 0px;
+}
 
+.carousel-item__details--subtitle {
+  color: #fff;
+  font-size: 8px;
+  margin: 3px 0px;
+}
 
+::-webkit-scrollbar {
+  display: none;
+}
 
-        ::-webkit-scrollbar {
-            display: none;
-        }
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
 
-        ::-webkit-scrollbar-thumb {
-            background: #ccc;
-            border-radius: 4px;
-          }
-          ::-webkit-scrollbar {
-            width: 8px; 
-            height: 8px;   
-            background:rgba(255,255,255,.4);
-            border-radius: 4px;
-          }
-          ::-webkit-scrollbar:hover {
-            background: #b3b3b3;
-            box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
-          }
-          ::-webkit-scrollbar:hover:active {
-            background: #999;
-          }
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar:hover {
+  background: #b3b3b3;
+  -webkit-box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar:hover:active {
+  background: #999;
+}
+/*# sourceMappingURL=styles.css.map */
